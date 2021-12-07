@@ -12,6 +12,7 @@ MechaLib is a website that aims to provide information about various things abou
     
 ### Requirements
 - PHP 8
+- Composer
 - Laravel 8
 - Bootstrap 5
 - Eloquent-Sluggable
@@ -25,8 +26,11 @@ MechaLib is a website that aims to provide information about various things abou
 - Make a database in MySQL
 - Edit database name in .env file
 - Add <strong>FILESYSTEM_DRIVER=public</strong> in bottom of .env file 
-- Run <strong>php artisan serve</strong> in terminal
+- Run <strong>composer install</strong> in terminal
+- Run <strong>php artisan key:generate</strong> in terminal
 - Run <strong>php artisan migrate:fresh --seed</strong> in terminal
+- Run <strong>php artisan storage:link</strong> in terminal
+- Run <strong>php artisan serve</strong> in terminal
 - Now you can open laravel localhost link in browser
 
 ## Contact
