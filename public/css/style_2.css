@@ -1,0 +1,45 @@
+.navbar .navbar-brand {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+}
+
+.foot p {
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 10px;
+}
+
+.carousel-item {
+    object-fit: cover;
+    height: 500px;
+}
+
+.carousel-item img {
+    margin-top: -100px;
+}
+
+.content .card img {
+    object-fit: cover;
+    height: 180px;
+}
+
+.form-signin .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.form-registration input {
+    border-radius: 0;
+    margin-bottom: -1px;
+}
