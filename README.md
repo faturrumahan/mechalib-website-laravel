@@ -1,9 +1,8 @@
 ## About Project
-<<<<<<< HEAD
 
 ### Title
 
--   MechaLib Website
+- MechaLib Website
 
 ### Description
 
@@ -31,43 +30,6 @@ MechaLib is a website that aims to provide information about various things abou
 
 ### How To Install
 
--   Install All Requirements
--   Start MySQL on XAMPP controll panel
--   Make a database in MySQL
--   Edit database name in .env file
--   Add <strong>FILESYSTEM_DRIVER=public</strong> in bottom of .env file
--   Run <strong>composer install</strong> in terminal
--   Run <strong>php artisan key:generate</strong> in terminal
--   Run <strong>php artisan migrate:fresh --seed</strong> in terminal
--   Run <strong>php artisan storage:link</strong> in terminal
--   Run <strong>php artisan serve</strong> in terminal
--   Now you can open laravel localhost link in browser
-
-## Contact
-
-=======
-### Title  
-- MechaLib Website
-### Description 
-MechaLib is a website that aims to provide information about various things about the world of mechanical keyboards. Users will be able to see various items contained in the mechanical keyboard like switch, pcb, and others. Besides that later users can create accounts to submit their own keyboards. For categories other than the keyboard can only be operated by accounts that have the role of admin.
-### Framework and Library
-- Laravel 8
-- Eloquent-Sluggable
-- Trix
-
-## Getting Started
-    
-### Requirements
-- PHP 8
-- Composer
-- Laravel 8
-- Bootstrap 5
-- Eloquent-Sluggable
-- Trix
-- Text Editor (VS Code or others)
-- XAMPP
-- MySQL database
-### How To Install
 - Install All Requirements
 - Start MySQL on XAMPP controll panel
 - Make a database in MySQL
@@ -81,7 +43,6 @@ MechaLib is a website that aims to provide information about various things abou
 - Now you can open laravel localhost link in browser
 
 ## Contact
->>>>>>> 98c84e2e7eb361fefa372af6a4ef1029b7723c7e
 <a href="https://www.instagram.com/faturrumahan/">Instagram</a>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
