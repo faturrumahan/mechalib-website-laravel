@@ -8,11 +8,13 @@ use App\Models\Item;
 
 class ItemController extends Controller
 {
+    //Display a listing of the resource and bring data from table items based on request.
     public function index()
     {
         $items = Item::latest();
         $from = "Search";
 
+        //if user search by category
         if (request('category')) {
             $cat = Category::firstWhere('slug', request('category'));
             $from = $cat->name;
@@ -26,6 +28,7 @@ class ItemController extends Controller
         ]);
     }
 
+    // Display the specified resource.
     public function detail(Item $detail)
     {
         return view('detail', [

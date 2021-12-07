@@ -11,7 +11,7 @@ use Cviebrock\EloquentSluggable\Services\SlugService;
 class DashboardItemController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Display a listing of the resource and bring data from table items based user_id.
      *
      * @return \Illuminate\Http\Response
      */
@@ -23,7 +23,7 @@ class DashboardItemController extends Controller
     }
 
     /**
-     * Show the form for creating a new resource.
+     * Show the form for creating a new resource and bring data from table categories.
      *
      * @return \Illuminate\Http\Response
      */
@@ -59,7 +59,7 @@ class DashboardItemController extends Controller
     }
 
     /**
-     * Display the specified resource.
+     * Display the specified resource from table items.
      *
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
@@ -72,7 +72,7 @@ class DashboardItemController extends Controller
     }
 
     /**
-     * Show the form for editing the specified resource.
+     * Show the form for editing the specified resource and bring data from table categories.
      *
      * @param  \App\Models\Item  $item
      * @return \Illuminate\Http\Response
@@ -103,12 +103,14 @@ class DashboardItemController extends Controller
         ]);
 
         $validatedData['slug'] = SlugService::createSlug(Item::class, 'slug', $validatedData['name']);
+
+        //if user upload new image
         if ($request->file('image')) {
             Storage::delete($request->old_img);
             $validatedData['image'] = $request->file('image')->store('submission-img');
         }
-        Item::where('id', $item->id)
-            ->update($validatedData);
+
+        Item::where('id', $item->id)->update($validatedData);
 
         $request->session()->flash('success', 'Submission Updated!');
         return redirect('dashboard/items');

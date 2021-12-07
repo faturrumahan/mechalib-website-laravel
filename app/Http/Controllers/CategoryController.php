@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 
 class CategoryController extends Controller
 {
+    //Display a listing of the resource and bring data from categories table.
     public function index()
     {
         return view('home', [
