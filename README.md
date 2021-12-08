@@ -22,9 +22,7 @@ MechaLib is a website that aims to provide information about various things abou
 -   Composer
 -   Laravel 8
 -   Bootstrap 5
--   Eloquent-Sluggable
--   Trix
--   Text Editor (VS Code or others)
+-   Text Editor
 -   XAMPP
 -   MySQL database
 
