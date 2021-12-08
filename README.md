@@ -31,6 +31,7 @@ MechaLib is a website that aims to provide information about various things abou
 - Install All Requirements
 - Start MySQL on XAMPP controll panel
 - Make a database in MySQL
+- Rename **.env.example** file with **.env**
 - Edit database name in .env file
 - Add <strong>FILESYSTEM_DRIVER=public</strong> in bottom of .env file 
 - Run <strong>composer install</strong> in terminal
